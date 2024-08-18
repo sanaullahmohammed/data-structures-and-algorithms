@@ -1,3 +1,5 @@
+// All test cases passed - 10/10 passed
+
 import java.util.*;
 
 class Lock {
@@ -93,7 +95,7 @@ class Solve {
       }
     }
 
-    for (String lockedDescendantNodeName: new ArrayList<>(node.lockedDescendants.keySet())) {
+    for (String lockedDescendantNodeName: new ArrayList<>(node.lockedDescendants.keySet())) { // separting creating arrayList to new line fails one case with TLE
       unlock(lockedDescendantNodeName, userId);
     }
 
